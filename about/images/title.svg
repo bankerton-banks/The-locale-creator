@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 484.45 159.95">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2d476f;
+        font-family: OverusedGrotesk-SemiBold, 'Overused Grotesk';
+        font-size: 150px;
+        font-variation-settings: 'wght' 600, 'slnt' 0;
+        font-weight: 600;
+      }
+
+      .cls-2 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.04em;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(10.67 123.71)"><tspan class="cls-3" x="0" y="0">A</tspan><tspan class="cls-2" x="94.2" y="0">B</tspan><tspan class="cls-3" x="181.05" y="0">OUT</tspan></text>
+</svg>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+            <button class="hamburger" id="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+      
+<a href="../home-page/index.html" class="home-button-link">
+            <img class="home-button" src="images/homebutton.svg" alt="Home">
+        </a>
+
+      <!-- Menu Overlay -->
+      <div class="menu-overlay" id="menuOverlay">
+        <button class="close-btn" id="closeBtn">&times;</button>
+        <nav class="menu-nav">
+          <a href="../home-page/index.html" class="menu-link">home</a>
+          <a href="donate" class="menu-link">donate</a>
+          <a href="#page2" class="menu-link">about</a>
+          <a href="#page3" class="menu-link">about</a>
+          <a href="#page4" class="menu-link">submit</a>
+          <a href="#page5" class="menu-link">join</a>
+        </nav>
+      </div>
+
+      <div class="header">
+            <div>
+                <p class="header-text">
+                ISSUE #1 <br>
+                Fall 2025   
+                </p>
+            </div>
+      </div>
+      
+      <div class="content-wrapper">
+        <div class="cover-container">
+                <img class="covers" src="images/frontcover.jpg">
+                 <img class="covers" src="images/backcover.jpg">
+        </div>
+         <div class="page-container">
+                <img class="pages" src="images/rgb12.jpg">
+        </div>
+         <div class="page-container">
+                <img class="pages" src="images/rgb113.jpg">
+        </div>
+         <div class="page-container">
+                <img class="pages" src="images/rgb114.jpg">
+        </div>
+         <div class="page-container">
+                <img class="pages" src="images/rgb115.jpg">
+        </div>
+         <div class="page-container">
+                <img class="pages" src="images/rgb116.jpg">
+        </div>
+         <div class="page-container">
+                <img class="pages" src="images/rgb117.jpg">
+        </div>
+         <div class="page-container">
+                <img class="pages" src="images/rgb118.jpg">
+        </div>
+         <div class="page-container">
+                <img class="pages" src="images/rgb119.jpg">
+        </div>
+         <div class="page-container">
+                <img class="pages" src="images/rgb120.jpg">
+        </div>
+         <div class="page-container">
+                <img class="pages" src="images/rgb121.jpg">
+        </div>
+         <div class="page-container">
+                <img class="pages" src="images/rgb122.jpg">
+        </div>
+         <div class="page-container">
+                <img class="pages" src="images/rgb23.jpg">
+        </div>
+         <div class="page-container">
+                <img class="pages" src="images/rgb124.jpg">
+        </div>
+         <div class="page-container">
+                <img class="pages" src="images/rgb125.jpg">
+        </div>
+         <div class="page-container">
+                <img class="pages" src="images/rgb126.jpg">
+        </div>
+         <div class="page-container">
+                <img class="pages" src="images/rgb127.jpg">
+        </div>
+      </div>
+         <hr>
+        <div class="footer-container">
+          <div class="socials">
+          <a> <img class="instagram icon" src="images/instagram-icon.png"></a>
+          <a> <img class="icon" id="tiktok" src="images/tiktok.icon.png"></a>
+          <a> <img class="email icon" src="images/email-icon.png"></a>
+          </div>
+          <div class="copyright">
+            <p class="copyright-text">
+              © the locale creator 2036
+            </p>
+          </div>
+        </div>
+        <hr id="bottom-line">
+
+         <script>
+  // Hamburger menu functionality
+  const hamburger = document.getElementById('hamburger');
+  const menuOverlay = document.getElementById('menuOverlay');
+  const closeBtn = document.getElementById('closeBtn');
+  const menuLinks = document.querySelectorAll('.menu-link');
+
+  // Open menu
+  hamburger.addEventListener('click', () => {
+    menuOverlay.classList.add('active');
+    hamburger.classList.add('hidden');
+  });
+
+  // Close menu
+  closeBtn.addEventListener('click', () => {
+    menuOverlay.classList.remove('active');
+    hamburger.classList.remove('hidden');
+  });
+
+  // Close menu when clicking a link
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      menuOverlay.classList.remove('active');
+      hamburger.classList.remove('hidden');
+    });
+  });
+</script>
+        <script src="" async defer></script>
+    </body>
+</html>

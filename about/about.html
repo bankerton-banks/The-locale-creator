@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="about.css">
+    </head>
+    <body>
+
+        <button class="hamburger" id="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+
+        <a href="../home-page/index.html" class="home-button-link">
+            <img class="home-button" src="images/homebutton.svg" alt="Home">
+        </a>
+
+        <!-- Menu Overlay -->
+        <div class="menu-overlay" id="menuOverlay">
+            <button class="close-btn" id="closeBtn">&times;</button>
+            <nav class="menu-nav">
+                <a href="../home-page/index.html" class="menu-link">home</a>
+                <a href="donate" class="menu-link">donate</a>
+                <a href="#page2" class="menu-link">about</a>
+                <a href="#page3" class="menu-link">about</a>
+                <a href="#page4" class="menu-link">submit</a>
+                <a href="#page5" class="menu-link">join</a>
+            </nav>
+        </div>
+
+        <div class="header-container">
+     <p class="header-text">ABOUT</p>
+</div>
+
+        <div class="body-container">
+            <div class="child">
+                <p class="subtext"> Who we are: </p>  <p class="description">the locale creator is a student-founded 
+                and led organization through The New School. Founded in 2025, 
+                through the desire to gain more visibility on peers' works,
+                Finley Banks and Liv Russo brought the publication to life. 
+                Our goal is to consistently support students' work and give
+                them opportunities to find authentic connections across mediums. </p>
+            </div> 
+           <div class="child">
+                <p class="subtext"> What we do: </p>  <p class="description">Each semester (Fall/Spring), the locale creator releases 
+                an issue of the publication, with a celebratory launch party. We 
+                are a growing organization and try our best to make every issue 
+                free for everyone. Nonetheless, your donations are extremely 
+                important to us. Donate here to fund the arts! </p>
+                </div>
+            <div class="child">
+                <p class="subtext"> Contact: </p>  <p class="description">
+                   <a  id="span" href="https://www.instagram.com/thelocalecreator/">Instagram: @thelocalecreator <br></a> 
+                   <a id="span" href="mailto:thelocalecreator@gmail.com">Email: thelocalecreator@gmail.com</a> 
+                </p>
+            </div>
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="images/image1.jpg" alt="Slide 1">
+                </div>
+                <div class="slide fade">
+                    <img src="images/image2.jpg" alt="Slide 2">
+                </div>
+                <div class="slide fade">
+                    <img src="images/image3.jpg" alt="Slide 3">
+                </div>
+                <div class="slide fade">
+                    <img src="images/image4.jpg" alt="Slide 4">
+                </div>
+                <div class="slide fade">
+                    <img src="images/image5.jpg" alt="Slide 5">
+                </div>
+                <div class="slide fade">
+                    <img src="images/image6.jpg" alt="Slide 6">
+                </div>
+                <div class="slide fade">
+                    <img src="images/image7.jpg" alt="Slide 7">
+                </div>
+                <div class="slide fade">
+                    <img src="images/image8.jpg" alt="Slide 8">
+                </div>
+                <div class="slide fade">
+                    <img src="images/image9.jpg" alt="Slide 9">
+                </div>
+                <div class="slide fade">
+                    <img src="images/image10.jpg" alt="Slide 10">
+                </div>
+
+                <!-- Optional: Navigation dots -->
+                <div class="dots-container">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+     <hr>
+      <div class="footer-container">
+    <div class="socials">
+        <a href="https://www.instagram.com/thelocalecreator/" target="_blank" rel="noopener noreferrer">
+            <img class="instagram icon" src="images/instagram-icon.png" alt="Instagram">
+        </a>
+        <a href="https://www.tiktok.com/@thelocalecreator" target="_blank" rel="noopener noreferrer">
+            <img class="icon" id="tiktok" src="images/tiktok.icon.png" alt="TikTok">
+        </a>
+        <a href="mailto:thelocalecreator@gmail.com?subject=Hello">
+            <img class="email icon" src="images/email-icon.png" alt="Email">
+        </a>
+    </div>
+</div>
+          <div class="copyright">
+            <p class="copyright-text">
+              © the locale creator 2036
+            </p>
+          </div>
+        </div>
+        <hr id="bottom-line">
+
+        <script>
+            // Hamburger menu functionality
+            const hamburger = document.getElementById('hamburger');
+            const menuOverlay = document.getElementById('menuOverlay');
+            const closeBtn = document.getElementById('closeBtn');
+            const menuLinks = document.querySelectorAll('.menu-link');
+            const homeButton = document.querySelector('.home-button-link');
+
+            // Open menu
+            hamburger.addEventListener('click', () => {
+                menuOverlay.classList.add('active');
+                hamburger.classList.add('hidden');
+                homeButton.classList.add('hidden');
+            });
+
+            // Close menu
+            closeBtn.addEventListener('click', () => {
+                menuOverlay.classList.remove('active');
+                hamburger.classList.remove('hidden');
+                homeButton.classList.remove('hidden');
+            });
+
+            // Close menu when clicking a link
+            menuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    menuOverlay.classList.remove('active');
+                    hamburger.classList.remove('hidden');
+                    homeButton.classList.remove('hidden');
+                });
+            });
+        </script>
+
+        <script>
+            // Slideshow functionality
+            let slideIndex = 0;
+            const slides = document.querySelectorAll('.slide');
+            const dots = document.querySelectorAll('.dot');
+
+            function showSlides() {
+                // Hide all slides
+                slides.forEach(slide => {
+                    slide.classList.remove('active');
+                });
+
+                // Remove active from all dots
+                dots.forEach(dot => {
+                    dot.classList.remove('active');
+                });
+
+                // Increment slide index
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1;
+                }
+
+                // Show current slide and dot
+                slides[slideIndex - 1].classList.add('active');
+                if (dots.length > 0) {
+                    dots[slideIndex - 1].classList.add('active');
+                }
+
+                // Change slide every 3 seconds
+                setTimeout(showSlides, 3000);
+            }
+
+            // Start slideshow when page loads
+            showSlides();
+
+            // Optional: Click dots to jump to specific slide
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    slideIndex = index;
+                    showSlides();
+                });
+            });
+
+            const container = document.querySelector('.header-container');
+let timeoutId;
+
+container.addEventListener('mouseenter', () => {
+    clearTimeout(timeoutId);
+    container.classList.add('show-blur');
+    
+    timeoutId = setTimeout(() => {
+        container.classList.remove('show-blur');
+    }, 5000);
+});
+        </script>
+    </body>
+</html>
