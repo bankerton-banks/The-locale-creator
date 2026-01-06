@@ -21,7 +21,7 @@ body {
     margin-right: 30px;
     margin-top: 50px;
     margin-bottom: 0px;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .options{
@@ -61,29 +61,32 @@ span{
     margin-left: 50px;
 }
 
-.gradient{
-    display: block;
-    width: 105%;
-    margin-top: -785px;
-    margin-left: -80px;
-    overflow-x: hidden;
-    position: fixed;
-    align-self: center;
-    overflow-y: hidden;
-    pointer-events: none;
+.slideshow-container {
+    position: absolute; /* Keep this one absolute for layout */
+    max-width: 600px;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    overflow: hidden;
+    align-items: center;
+    margin-left: 870px;
+    margin-top: 50px;
 }
 
 .footer-container{
     display: flex;
-    display: block;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 400px;
+    gap: 50px;
+    margin-bottom: 50px;
 }
 
 .socials{
     display: flex;
     flex-direction: row;
     gap: 20px;
-    margin-left: 450px;
-    margin-top: 20px;
 }
 
 .icon{
@@ -106,20 +109,18 @@ span{
 }
 
 .copyright{
-  display: flex;
-  align-items: center;
-  margin-left: 850px;
-  margin-top: -50px;
-  padding-bottom: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .copyright-text{
-  font-family: Overused Grotesk;
-  font-size: 18px;
-  letter-spacing: -5%;
-  line-height: 1;
-  font-weight: 400;
-  color: black;
+    font-family: Overused Grotesk;
+    font-size: 18px;
+    letter-spacing: -5%;
+    line-height: 1;
+    font-weight: 400;
+    color: black;
+    margin-top: -14px;
 }
 
 hr{
@@ -129,4 +130,14 @@ hr{
 #bottom-line{
     margin-top: 25px;
     padding-bottom: 20px;
+}
+
+.gradient{
+    position: fixed;
+    width: 1600px;
+    height: 1000px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    margin-top: 75px;
 }

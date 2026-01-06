@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="join.css">
+    </head>
+    <body>
+           <button class="hamburger" id="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+
+        <a href="../index.html" class="home-button-link">
+            <img class="home-button" src="images/homebutton.svg" alt="Home">
+        </a>
+
+        <!-- Menu Overlay -->
+        <div class="menu-overlay" id="menuOverlay">
+            <button class="close-btn" id="closeBtn">&times;</button>
+            <nav class="menu-nav">
+                <a href="../home-page/index.html" class="menu-link">home</a>
+                <a href="../donate/index.html" class="menu-link">donate</a>
+                <a href="../submit/submit.html" class="menu-link">submit</a>
+                <a href="../join/join.html" class="menu-link">join</a>
+                
+            </nav>
+        </div>
+
+        <div class="header-container">
+     <p class="header-text">JOIN THE TEAM!</p>
+</div>
+
+
+      <div class="body-container">
+    <div class="child">
+         <p class="subtext"> Open Positions: </p>
+         <p class="description">
+          - Writer <br>
+          - Photography Director <br>
+          - Social Media Director <br>
+          - Designer <br>
+          <br>
+        </p>
+        <p class="subtext">What we are looking for:</p>
+        <p class="description">
+            - proactive <br>
+            - go getters <br>
+            - good communication <br>
+            - creativity <br>
+            - responsive to feedback <br>
+            - passionate about our mission <br> <br>
+            We would love to learn more about you. Please fill out the google form if you are interested in working with us. 
+            We would be happy to meet up or schedule a call with you to see if you would be a good fit at the locale creator!
+        </p>
+    </div> 
+</div>
+
+       <div class="slideshow-container">
+                <div class="slide fade">
+                 <a href="https://forms.gle/KzjECcVjBzUqny1M6">  <img class="image" src="images/applybutton.svg" alt="Slide 1"> </a>  
+                </div>
+        </div>
+           
+     <div class="footer-container">
+    <img class="footer-background" src="images/Rectangle.png" alt="">
+    <div class="socials">
+        <a href="https://www.instagram.com/thelocalecreator/" target="_blank" rel="noopener noreferrer">
+            <img class="instagram icon" src="images/instagram-icon.png" alt="Instagram">
+        </a>
+        <a href="https://www.tiktok.com/@thelocalecreator" target="_blank" rel="noopener noreferrer">
+            <img class="icon" id="tiktok" src="images/tiktok.icon.png" alt="TikTok">
+        </a>
+        <a href="mailto:thelocalecreator@gmail.com?subject=Hello">
+            <img class="email icon" src="images/email-icon.png" alt="Email">
+        </a>
+    </div>
+    <div class="copyright">
+        <p class="copyright-text">
+          © the locale creator 2036
+        </p>
+    </div>
+</div>
+ <script>
+            // Hamburger menu functionality
+            const hamburger = document.getElementById('hamburger');
+            const menuOverlay = document.getElementById('menuOverlay');
+            const closeBtn = document.getElementById('closeBtn');
+            const menuLinks = document.querySelectorAll('.menu-link');
+            const homeButton = document.querySelector('.home-button-link');
+
+            // Open menu
+            hamburger.addEventListener('click', () => {
+                menuOverlay.classList.add('active');
+                hamburger.classList.add('hidden');
+                homeButton.classList.add('hidden');
+            });
+
+            // Close menu
+            closeBtn.addEventListener('click', () => {
+                menuOverlay.classList.remove('active');
+                hamburger.classList.remove('hidden');
+                homeButton.classList.remove('hidden');
+            });
+
+            // Close menu when clicking a link
+            menuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    menuOverlay.classList.remove('active');
+                    hamburger.classList.remove('hidden');
+                    homeButton.classList.remove('hidden');
+                });
+            });
+        </script>
+
+        
+        <script src="" async defer></script>
+    </body>
+</html>

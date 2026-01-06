@@ -12,7 +12,103 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
     </head>
-     <body>
-    
+        <body>
+           <body>
+           <button class="hamburger" id="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+
+        <a href="../index.html" class="home-button-link">
+            <img class="home-button" src="images/homebutton.svg" alt="Home">
+        </a>
+
+        <!-- Menu Overlay -->
+        <div class="menu-overlay" id="menuOverlay">
+            <button class="close-btn" id="closeBtn">&times;</button>
+            <nav class="menu-nav">
+                <a href="../index.html" class="menu-link">home</a>
+                <a href="../about/about.html" class="menu-link">about</a>
+                <a href="../submit/submit.html" class="menu-link">submit</a>
+                <a href="../join/join.html" class="menu-link">join</a>
+                
+            </nav>
+        </div>
+
+        <div class="header-container">
+     <p class="header-text">DONATE TO FUND THE ARTS!</p>
+</div>
+
+
+ <div class="body-container">
+    <div class="child">
+        <p class="bodytext">
+            Every donation and form of support helps us to build a community of creatives & platform others. Your donation will go straight into our budget through The New School. Your funds will be solely used to purchase materials. 
+        </p>
+    </div> 
+</div>
+
+       <div class="slideshow-container">
+                <div class="slide fade">
+                 <a href="https://www.givecampus.com/campaigns/37864/donations/new">  <img class="image" src="images/DONATEBUTTON.svg" alt="Slide 1"> </a>  
+                </div>
+        </div>
+           
+     <div class="footer-container">
+    <img class="footer-background" src="images/Rectangle.png" alt="">
+    <div class="socials">
+        <a href="https://www.instagram.com/thelocalecreator/" target="_blank" rel="noopener noreferrer">
+            <img class="instagram icon" src="images/instagram-icon copy.png" alt="Instagram">
+        </a>
+        <a href="https://www.tiktok.com/@thelocalecreator" target="_blank" rel="noopener noreferrer">
+            <img class="icon" id="tiktok" src="images/tiktok.icon.png" alt="TikTok">
+        </a>
+        <a href="mailto:thelocalecreator@gmail.com?subject=Hello">
+            <img class="email icon" src="images/email-icon.png" alt="Email">
+        </a>
+    </div>
+    <div class="copyright">
+        <p class="copyright-text">
+          © the locale creator 2036
+        </p>
+    </div>
+</div>
+ <script>
+            // Hamburger menu functionality
+            const hamburger = document.getElementById('hamburger');
+            const menuOverlay = document.getElementById('menuOverlay');
+            const closeBtn = document.getElementById('closeBtn');
+            const menuLinks = document.querySelectorAll('.menu-link');
+            const homeButton = document.querySelector('.home-button-link');
+
+            // Open menu
+            hamburger.addEventListener('click', () => {
+                menuOverlay.classList.add('active');
+                hamburger.classList.add('hidden');
+                homeButton.classList.add('hidden');
+            });
+
+            // Close menu
+            closeBtn.addEventListener('click', () => {
+                menuOverlay.classList.remove('active');
+                hamburger.classList.remove('hidden');
+                homeButton.classList.remove('hidden');
+            });
+
+            // Close menu when clicking a link
+            menuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    menuOverlay.classList.remove('active');
+                    hamburger.classList.remove('hidden');
+                    homeButton.classList.remove('hidden');
+                });
+            });
+        </script>
+
+        
+        <script src="" async defer></script>
+    </body>
     </body>
 </html>
+  

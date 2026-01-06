@@ -134,21 +134,20 @@
 html {
     scroll-behavior: smooth;
 }
-.header-text{
-    font-family: Overused Grotesk;
-    font-size: 150pt;
-    letter-spacing: -9pt;
-    font-weight: 500;
-    line-height: 80%;
-}
 
 .header{
     display: flex;
     justify-content: left;
-    margin-top: 25px;
-    margin-left: 25px;
-    padding-bottom: 30px;
-
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+.header-text{
+    font-family: Overused Grotesk;
+    font-size: 250pt;
+    letter-spacing: -12pt;
+    line-height: 75%;
+    font-weight: 500;
 }
 
 .content-wrapper{
@@ -186,17 +185,35 @@ html {
 }
 
 
+
+
+.footer-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Changed back to contain to show full image */
+    object-position: center;
+    z-index: 0;
+}
+
 .footer-container{
     display: flex;
-    display: block;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    gap: 50px;
+    position: relative;
+    min-height: 500px
 }
 
 .socials{
     display: flex;
     flex-direction: row;
     gap: 20px;
-    margin-left: 450px;
-    margin-top: 20px;
+    z-index: 1;
 }
 
 .icon{
@@ -219,27 +236,17 @@ html {
 }
 
 .copyright{
-  display: flex;
-  align-items: center;
-  margin-left: 850px;
-  margin-top: -50px;
-  padding-bottom: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .copyright-text{
-  font-family: Overused Grotesk;
-  font-size: 18px;
-  letter-spacing: -5%;
-  line-height: 1;
-  font-weight: 400;
-  color: black;
-}
-
-hr{
-    margin-top: 400px;
-}
-
-#bottom-line{
-    margin-top: 25px;
-    padding-bottom: 20px;
+    font-family: Overused Grotesk;
+    font-size: 18px;
+    letter-spacing: -5%;
+    line-height: 1;
+    font-weight: 400;
+    color: black;
+    margin-top: -14px;
+    z-index: 1;
 }

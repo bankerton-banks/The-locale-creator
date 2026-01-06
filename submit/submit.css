@@ -285,3 +285,103 @@ hr{
     margin-top: 25px;
     padding-bottom: 20px;
 }
+
+.slideshow-container {
+    position: absolute;
+    max-width: 600px;
+    width: 900px;
+    height: 600px;
+    margin: auto;
+    overflow: hidden;
+    align-items: center;
+    margin-left: 830px;
+    margin-top: -550px;
+}
+
+.image{
+    width: 800px;
+    animation: spin 8s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 100px;
+    overflow: hidden;
+    min-height: 500px; /* Increased to show more of image */
+    width: 100%;
+    padding: 40px 0;
+}
+
+.footer-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Changed back to contain to show full image */
+    object-position: center;
+    z-index: 0;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 0;
+}
+
+.icon{
+    width: 50px;
+}
+
+.instagram{
+    width: 40px;
+    margin-top: 5px;
+}
+
+#tiktok{
+    width: 70px;
+    margin-top: -10px;
+}
+
+.email{
+    width: 55px;
+    margin-top: -5px;
+}
+
+.copyright-text{
+    font-family: Overused Grotesk;
+    font-size: 18px;
+    letter-spacing: -5%;
+    line-height: 1;
+    font-weight: 400;
+    color: black;
+}

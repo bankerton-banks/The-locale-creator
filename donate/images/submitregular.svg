@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 574.8 159.95">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231f20;
+        font-family: OverusedGrotesk-SemiBold, 'Overused Grotesk';
+        font-size: 150px;
+        font-variation-settings: 'wght' 600, 'slnt' 0;
+        font-weight: 600;
+        letter-spacing: -.04em;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(44.54 132.71)"><tspan x="0" y="0">SUBMIT</tspan></text>
+</svg>

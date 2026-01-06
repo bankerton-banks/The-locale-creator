@@ -1,0 +1,48 @@
+<svg width="2644" height="1695" viewBox="0 0 2644 1695" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_4_39)" filter="url(#filter0_fn_4_39)">
+<rect width="2280" height="1331" transform="translate(181.7 181.7)" fill="white"/>
+<ellipse cx="339.7" cy="402.2" rx="308" ry="315.5" fill="#CBEBFB"/>
+<ellipse cx="1422.7" cy="936.2" rx="308" ry="315.5" fill="#CBEBFB"/>
+<ellipse cx="277.7" cy="1033.2" rx="308" ry="315.5" fill="#B2D7E9"/>
+<ellipse cx="1037.7" cy="323.2" rx="308" ry="315.5" fill="#B2D7E9"/>
+<ellipse cx="938.7" cy="1376.2" rx="457" ry="315.5" fill="#A0DDFB"/>
+<ellipse cx="2070.7" cy="917.2" rx="457" ry="315.5" fill="#A0DDFB"/>
+<ellipse cx="838.679" cy="810.451" rx="238" ry="315.5" transform="rotate(72.276 838.679 810.451)" fill="#A0DDFB"/>
+<ellipse cx="1802.7" cy="364.2" rx="457" ry="315.5" fill="#CBEBFB"/>
+<ellipse cx="1371.2" cy="638.7" rx="208.5" ry="177" fill="#CBEBFB"/>
+<ellipse cx="2070.2" cy="1251.7" rx="208.5" ry="177" fill="#CBEBFB"/>
+<ellipse cx="776.2" cy="502.7" rx="208.5" ry="177" fill="#CBEBFB"/>
+<ellipse cx="1285.2" cy="987.7" rx="208.5" ry="177" fill="#CBEBFB"/>
+<ellipse cx="1285.2" cy="810.7" rx="208.5" ry="177" fill="#CBEBFB"/>
+<ellipse cx="1802.7" cy="364.2" rx="457" ry="315.5" fill="#CBEBFB"/>
+<ellipse cx="281.7" cy="1471.7" rx="250" ry="220" fill="#CBEBFB"/>
+<ellipse cx="2378.7" cy="456.2" rx="308" ry="315.5" fill="#B2D7E9"/>
+<ellipse cx="1679.7" cy="1412.2" rx="308" ry="315.5" fill="#CBEBFB"/>
+<ellipse cx="2312.7" cy="1512.2" rx="308" ry="315.5" fill="#CBEBFB"/>
+</g>
+<defs>
+<filter id="filter0_fn_4_39" x="1.52588e-05" y="1.52588e-05" width="2643.4" height="1694.4" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="90.85" result="effect1_foregroundBlur_4_39"/>
+<feTurbulence type="fractalNoise" baseFrequency="2.1276595592498779 2.1276595592498779" stitchTiles="stitch" numOctaves="3" result="noise" seed="7561" />
+<feComponentTransfer in="noise" result="coloredNoise1">
+<feFuncR type="linear" slope="2" intercept="-0.5" />
+<feFuncG type="linear" slope="2" intercept="-0.5" />
+<feFuncB type="linear" slope="2" intercept="-0.5" />
+<feFuncA type="discrete" tableValues="0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "/>
+</feComponentTransfer>
+<feComposite operator="in" in2="effect1_foregroundBlur_4_39" in="coloredNoise1" result="noise1Clipped" />
+<feComponentTransfer in="noise1Clipped" result="color1">
+<feFuncA type="table" tableValues="0 0.15" />
+</feComponentTransfer>
+<feMerge result="effect2_noise_4_39">
+<feMergeNode in="effect1_foregroundBlur_4_39" />
+<feMergeNode in="color1" />
+</feMerge>
+</filter>
+<clipPath id="clip0_4_39">
+<rect width="2280" height="1331" fill="white" transform="translate(181.7 181.7)"/>
+</clipPath>
+</defs>
+</svg>
