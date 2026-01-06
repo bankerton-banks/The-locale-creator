@@ -250,3 +250,306 @@ html {
     margin-top: -14px;
     z-index: 1;
 }
+   /* Large Desktop */
+        @media (min-width: 1600px) {
+            .header {
+                margin-left: 70px;
+            }
+
+            .header-text {
+                font-size: 300pt;
+                letter-spacing: -14pt;
+            }
+
+            .covers {
+                width: 700px;
+            }
+
+            .pages {
+                width: 1400px;
+            }
+
+            .footer-container {
+                margin-top: 200px;
+                min-height: 600px;
+            }
+
+            .menu-link {
+                font-size: 36pt;
+            }
+
+            .menu-link:hover {
+                font-size: 44pt;
+            }
+        }
+
+        /* Tablet */
+        @media (max-width: 1024px) {
+            .home-button-link {
+                width: 60px;
+                height: 60px;
+                top: 50px;
+            }
+
+            .home-button {
+                width: 60px;
+            }
+
+            .header {
+                margin-left: 40px;
+                margin-top: 30px;
+            }
+
+            .header-text {
+                font-size: 150pt;
+                letter-spacing: -7pt;
+            }
+
+            .covers {
+                width: 450px;
+            }
+
+            .pages {
+                width: 900px;
+            }
+
+            .footer-container {
+                margin-top: 100px;
+                min-height: 400px;
+            }
+
+            .menu-link {
+                font-size: 28pt;
+            }
+
+            .menu-link:hover {
+                font-size: 34pt;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .home-button-link {
+                width: 60px;
+                height: 60px;
+                top: 50px;
+                right: 13px;
+            }
+
+            .home-button {
+                width: 60px;
+            }
+
+            .hamburger {
+                top: 20px;
+                right: 20px;
+            }
+
+            .hamburger .line {
+                width: 25px;
+                height: 2px;
+            }
+
+            .close-btn {
+                top: 20px;
+                right: 20px;
+                font-size: 40px;
+            }
+
+            .header {
+                margin-left: 25px;
+                margin-top: 25px;
+                margin-bottom: 30px;
+            }
+
+            .header-text {
+                font-size: 80pt;
+                letter-spacing: -4pt;
+                line-height: 80%;
+            }
+
+            .content-wrapper {
+                background: linear-gradient(to bottom, 
+                    white, 
+                    lightgrey 100px,
+                    lightgrey calc(100% - 100px),
+                    white 100%
+                );
+                padding-bottom: 30px;
+            }
+
+            .cover-container {
+                gap: 10px;
+                padding-top: 15px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .covers {
+                width: calc(100% - 30px);
+                max-width: 208px;
+            }
+
+            .page-container {
+                margin-top: 15px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .pages {
+                width: calc(100% - 30px);
+                max-width: 600px;
+            }
+
+            .footer-container {
+                margin-top: 80px;
+                gap: 25px;
+                flex-direction: column;
+                min-height: 350px;
+                padding: 30px 0;
+            }
+
+            .socials {
+                gap: 15px;
+            }
+
+            .icon {
+                width: 40px;
+            }
+
+            .instagram {
+                width: 32px;
+            }
+
+            #tiktok {
+                width: 56px;
+            }
+
+            .email {
+                width: 44px;
+            }
+
+            .copyright-text {
+                font-size: 14px;
+                text-align: center;
+            }
+
+            .menu-link {
+                font-size: 24pt;
+            }
+
+            .menu-link:hover {
+                font-size: 28pt;
+            }
+        }
+
+        /* Small Mobile */
+        @media (max-width: 480px) {
+            .home-button-link {
+                width: 40px;
+                height: 40px;
+                top: 30px;
+                right: 10px;
+            }
+
+            .home-button {
+                width: 40px;
+            }
+
+            .hamburger {
+                top: 15px;
+                right: 15px;
+                padding: 8px;
+            }
+
+            .hamburger .line {
+                width: 22px;
+            }
+
+            .header {
+                margin-left: 15px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .header-text {
+                font-size: 50pt;
+                letter-spacing: -2pt;
+            }
+
+            .content-wrapper {
+                background: linear-gradient(to bottom, 
+                    white, 
+                    lightgrey 80px,
+                    lightgrey calc(100% - 80px),
+                    white 100%
+                );
+                padding-bottom: 20px;
+            }
+
+            .cover-container {
+                gap: 8px;
+                padding-top: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .covers {
+                width: calc(100% - 20px);
+                max-width: 300px;
+            }
+
+            .page-container {
+                margin-top: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .pages {
+                width: calc(100% - 20px);
+                max-width: 400px;
+            }
+
+            .footer-container {
+                margin-top: 60px;
+                gap: 20px;
+                min-height: 300px;
+                padding: 20px 0;
+            }
+
+            .copyright {
+                margin-top: 10px;
+            }
+
+            .socials {
+                gap: 12px;
+            }
+
+            .icon {
+                width: 35px;
+            }
+
+            .instagram {
+                width: 28px;
+            }
+
+            #tiktok {
+                width: 50px;
+            }
+
+            .email {
+                width: 38px;
+            }
+
+            .copyright-text {
+                font-size: 12px;
+            }
+
+            .menu-link {
+                font-size: 20pt;
+            }
+
+            .menu-link:hover {
+                font-size: 24pt;
+            }
+        }

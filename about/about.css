@@ -223,8 +223,8 @@ html {
     margin: auto;
     overflow: hidden;
     align-items: center;
-    margin-left: 870px;
-    margin-top: 50px;
+    margin-left: 750px;
+    margin-top: 20px;
 }
 
 .slide {
@@ -239,7 +239,7 @@ html {
 
 .slide img {
     width: 600px;
-    height: 700px;
+    height: 600px;
     display: block;
     object-fit: cover;
 }
@@ -355,3 +355,329 @@ html {
     color: black;
 }
 
+        /* Large Desktop */
+        @media (min-width: 1600px) {
+            .header-text {
+                font-size: 250pt;
+                letter-spacing: -12pt;
+            }
+
+            .body-container {
+                max-width: 700px;
+                margin-left: 60px;
+            }
+
+            .subtext {
+                font-size: 56pt;
+            }
+
+            .description {
+                font-size: 18pt;
+            }
+
+            .slideshow-container {
+                width: 700px;
+                height: 700px;
+                margin-left: 900px;
+            }
+
+            .footer-container {
+                min-height: 600px;
+            }
+
+            .menu-link {
+                font-size: 36pt;
+            }
+
+            .menu-link:hover {
+                font-size: 44pt;
+            }
+        }
+
+        /* Tablet */
+        @media (max-width: 1200px) {
+            .slideshow-container {
+                position: relative;
+                margin-left: 50px;
+                margin-top: 50px;
+                width: calc(100% - 100px);
+                max-width: 600px;
+                height: auto;
+                aspect-ratio: 1;
+            }
+
+            .body-container {
+                max-width: calc(100% - 100px);
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .home-button-link {
+                width: 60px;
+                height: 60px;
+                top: 50px;
+            }
+
+            .home-button {
+                width: 60px;
+            }
+
+            .header-container {
+                width: 90%;
+                margin-left: 20px;
+            }
+
+            .header-text {
+                font-size: 150pt;
+                letter-spacing: -7pt;
+                margin-left: 20px;
+            }
+
+            .body-container {
+                margin-left: 40px;
+                margin-right: 40px;
+                max-width: calc(100% - 80px);
+            }
+
+            .subtext {
+                font-size: 40pt;
+            }
+
+            .description {
+                font-size: 14pt;
+            }
+
+            .slideshow-container {
+                margin-left: 40px;
+                width: calc(100% - 80px);
+                max-width: 500px;
+            }
+
+            .footer-container {
+                min-height: 400px;
+            }
+
+            .menu-link {
+                font-size: 28pt;
+            }
+
+            .menu-link:hover {
+                font-size: 34pt;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+              .home-button-link {
+                width: 60px;
+                height: 60px;
+                top: 40px;
+                right: 13px;
+            }
+
+            .home-button {
+                width: 60px;
+            }
+
+            .hamburger {
+                top: 20px;
+                right: 20px;
+            }
+
+            .hamburger .line {
+                width: 25px;
+                height: 2px;
+            }
+
+            .close-btn {
+                top: 20px;
+                right: 20px;
+                font-size: 40px;
+            }
+
+            .header-container {
+                width: 90%;
+                margin-left: 15px;
+            }
+
+            .header-text {
+                font-size: 80pt;
+                letter-spacing: -4pt;
+                margin-left: 15px;
+                margin-top: 30px;
+            }
+
+            .body-container {
+                margin-left: 25px;
+                margin-right: 25px;
+                max-width: calc(100% - 50px);
+                margin-top: 30px;
+                gap: 15px;
+            }
+
+            .subtext {
+                font-size: 28pt;
+                line-height: 1.3;
+            }
+
+            .description {
+                font-size: 12pt;
+                line-height: 1.3;
+            }
+
+            .slideshow-container {
+                margin-left: 25px;
+                margin-top: 30px;
+                width: calc(100% - 50px);
+                max-width: 400px;
+            }
+
+            .footer-container {
+                min-height: 350px;
+                margin-top: 60px;
+                padding: 30px 0;
+            }
+
+            .socials {
+                gap: 15px;
+            }
+
+            .icon {
+                width: 40px;
+            }
+
+            .instagram {
+                width: 32px;
+            }
+
+            #tiktok {
+                width: 56px;
+            }
+
+            .email {
+                width: 44px;
+            }
+
+            .copyright-text {
+                font-size: 14px;
+            }
+
+            .menu-link {
+                font-size: 24pt;
+            }
+
+            .menu-link:hover {
+                font-size: 28pt;
+            }
+        }
+
+        /* Small Mobile */
+        @media (max-width: 480px) {
+            .home-button-link {
+                width: 60px;
+                height: 60px;
+                top: 40px;
+                right: 20px;
+            }
+
+            .home-button {
+                width: 60px;
+            }
+
+            .hamburger {
+                top: 15px;
+                right: 15px;
+                padding: 8px;
+            }
+
+            .hamburger .line {
+                width: 22px;
+            }
+
+            .header-container {
+                margin-left: 10px;
+            }
+
+            .header-text {
+                font-size: 50pt;
+                letter-spacing: -2pt;
+                margin-left: 10px;
+                margin-top: 20px;
+            }
+
+            .body-container {
+                margin-left: 15px;
+                margin-right: 15px;
+                max-width: calc(100% - 30px);
+                margin-top: 20px;
+                gap: 12px;
+            }
+
+            .subtext {
+                font-size: 22pt;
+            }
+
+            .description {
+                font-size: 11pt;
+            }
+
+            .slideshow-container {
+                margin-left: 15px;
+                margin-top: 20px;
+                width: calc(100% - 30px);
+                max-width: 300px;
+            }
+
+            .dots-container {
+                padding: 10px;
+                bottom: 10px;
+            }
+
+            .dot {
+                height: 8px;
+                width: 8px;
+                margin: 0 3px;
+            }
+
+            .footer-container {
+                min-height: 300px;
+                margin-top: 40px;
+                padding: 20px 0;
+            }
+
+            .copyright {
+                margin-top: 20px;
+            }
+
+            .socials {
+                gap: 12px;
+            }
+
+            .icon {
+                width: 35px;
+            }
+
+            .instagram {
+                width: 28px;
+            }
+
+            #tiktok {
+                width: 50px;
+            }
+
+            .email {
+                width: 38px;
+            }
+
+            .copyright-text {
+                font-size: 12px;
+            }
+
+            .menu-link {
+                font-size: 20pt;
+            }
+
+            .menu-link:hover {
+                font-size: 24pt;
+            }
+        }

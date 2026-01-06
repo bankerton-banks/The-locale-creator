@@ -139,7 +139,7 @@ html {
 
 .header-text{
     font-family: Overused Grotesk;
-    font-size: 200pt;
+    font-size: 150pt;
     letter-spacing: -9pt;
     font-weight: 500;
     line-height: 80%;
@@ -149,7 +149,7 @@ html {
 
 .header-container {
     position: relative;
-    width: 1000px;
+    width: 100px;
     margin-top: 0px;
     margin-left: px;
     height: 200px;
@@ -214,8 +214,8 @@ html {
     color: black;
     line-height: 1.0;
     width: 550px;
-    margin-top: 30px;
-    margin-left: 420px;
+    margin-top: -30px;
+    margin-left: 350px;
 }
 
 .submit{
@@ -397,7 +397,7 @@ hr{
     margin: auto;
     overflow: hidden;
     align-items: center;
-    margin-left: 830px;
+    margin-left: 780px;
     margin-top: 0px;
 }
 
@@ -414,3 +414,364 @@ hr{
         transform: rotate(360deg);
     }
 }
+
+     /* Large Desktop */
+        @media (min-width: 1600px) {
+            .header-text {
+                font-size: 180pt;
+                letter-spacing: -11pt;
+                margin-left: 90px;
+            }
+
+            .header-default, .header-blur {
+                width: 950px;
+            }
+
+            .info-container {
+                margin-left: 350px;
+                gap: 70px;
+            }
+
+            .subtext {
+                font-size: 56pt;
+            }
+
+            .bodytext {
+                font-size: 18pt;
+                width: 650px;
+                margin-left: 400px;
+            }
+
+            .submit {
+                width: 480px;
+                margin-left: 1100px;
+                margin-top: -600px;
+            }
+
+            .slideshow-container {
+                width: 1000px;
+                height: 700px;
+                margin-left: 950px;
+            }
+
+            .image {
+                width: 950px;
+            }
+
+            .footer-container {
+                margin-top: 900px;
+                min-height: 600px;
+            }
+
+            .menu-link {
+                font-size: 36pt;
+            }
+
+            .menu-link:hover {
+                font-size: 44pt;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+          .home-button-link {
+                width: 60px;
+                height: 60px;
+                top: 50px;
+                right: 13px;
+            }
+
+            .home-button {
+                width: 60px;
+            }
+
+            .hamburger {
+                top: 20px;
+                right: 20px;
+            }
+
+            .hamburger .line {
+                width: 25px;
+                height: 2px;
+            }
+
+            .close-btn {
+                top: 20px;
+                right: 20px;
+                font-size: 40px;
+            }
+
+            .header-text {
+                font-size: 60pt;
+                letter-spacing: -3pt;
+                margin-left: 25px;
+                margin-top: 30px;
+            }
+
+            .header-container {
+                width: 90%;
+                height: auto;
+            }
+
+            .header-default, .header-blur {
+                width: 100%;
+                max-width: 350px;
+            }
+
+            .info-container {
+                margin-left: 25px;
+                margin-right: 55px;
+                margin-top: 30px;
+                gap: 30px;
+            }
+
+            .subtext {
+                font-size: 28pt;
+                line-height: 1;
+            }
+
+            .bodytext {
+                font-size: 12pt;
+                line-height: 1.3;
+                width: 100%;
+                max-width: calc(100vw - 50px);
+                margin-left: 30px;
+                margin-top: 10px;
+            }
+
+            .submit {
+                width: calc(100% - 50px);
+                max-width: 500px;
+                margin-left: 25px;
+                margin-top: 40px;
+                position: relative;
+            }
+
+            .slideshow-container {
+                position: relative;
+                width: calc(100% - 50px);
+                max-width: 550px;
+                height: 350px;
+                margin-left: 25px;
+                margin-top: 40px;
+            }
+
+            .image {
+                width: 100%;
+                max-width: 550px;
+            }
+
+            .footer-container {
+                margin-top: 100px;
+                min-height: 350px;
+                padding: 30px 0;
+            }
+
+            .socials {
+                gap: 15px;
+            }
+
+            .icon {
+                width: 40px;
+            }
+
+            .instagram {
+                width: 32px;
+            }
+
+            #tiktok {
+                width: 56px;
+            }
+
+            .email {
+                width: 44px;
+            }
+
+            .copyright-text {
+                font-size: 14px;
+            }
+
+            .menu-link {
+                font-size: 24pt;
+            }
+
+            .menu-link:hover {
+                font-size: 28pt;
+            }
+
+            hr {
+                margin-top: 100px;
+            }
+
+            #bottom-line {
+                margin-top: 15px;
+            }
+        }
+
+        /* Small Mobile */
+        @media (max-width: 480px) {
+            .home-button-link {
+                width: 60px;
+                height: 60px;
+                top: 60px;
+                right: 13px;
+            }
+
+            .home-button {
+                width: 60px;
+            }
+
+            .hamburger {
+                top: 15px;
+                right: 15px;
+                padding: 8px;
+            }
+
+            .hamburger .line {
+                width: 22px;
+            }
+
+            .header-text {
+                font-size: 45pt;
+                letter-spacing: -2pt;
+                margin-left: 15px;
+                margin-top: 20px;
+            }
+
+            .header-default, .header-blur {
+                max-width: 280px;
+            }
+
+            .info-container {
+                margin-left: 15px;
+                margin-right: 15px;
+                margin-top: 20px;
+                gap: 20px;
+            }
+
+            .subtext {
+                font-size: 22pt;
+            }
+
+            .bodytext {
+                font-size: 11pt;
+                max-width: calc(100vw - 30px);
+            }
+
+            .submit {
+                width: calc(100% - 30px);
+                max-width: 250px;
+                margin-left: 15px;
+                margin-top: 30px;
+            }
+
+            .slideshow-container {
+                width: calc(100% - 30px);
+                max-width: 280px;
+                height: 280px;
+                margin-left: 15px;
+                margin-top: 30px;
+            }
+
+            .image {
+                max-width: 280px;
+            }
+
+            .footer-container {
+                margin-top: 80px;
+                min-height: 300px;
+                padding: 20px 0;
+            }
+
+            .copyright {
+                margin-top: 20px;
+            }
+
+            .socials {
+                gap: 12px;
+            }
+
+            .icon {
+                width: 35px;
+            }
+
+            .instagram {
+                width: 28px;
+            }
+
+            #tiktok {
+                width: 50px;
+            }
+
+            .email {
+                width: 38px;
+            }
+
+            .copyright-text {
+                font-size: 12px;
+            }
+
+            .menu-link {
+                font-size: 20pt;
+            }
+
+            .menu-link:hover {
+                font-size: 24pt;
+            }
+        }
+
+        /* Tablet (between mobile and desktop) */
+        @media (min-width: 769px) and (max-width: 1200px) {
+            .header-text {
+                font-size: 100pt;
+                letter-spacing: -6pt;
+                margin-left: 50px;
+            }
+
+            .header-default, .header-blur {
+                width: 600px;
+            }
+
+            
+
+            .info-container {
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+
+            .subtext {
+                font-size: 38pt;
+            }
+
+            .bodytext {
+                font-size: 14pt;
+                width: 100%;
+                max-width: 500px;
+                margin-left: 0;
+            }
+
+            .submit {
+                width: 350px;
+                margin-left: 50px;
+                margin-top: 40px;
+                position: relative;
+            }
+
+            .slideshow-container {
+                position: relative;
+                width: 90%;
+                max-width: 500px;
+                height: 500px;
+                margin-left: 50px;
+                margin-top: 40px;
+            }
+
+            .image {
+                width: 100%;
+                max-width: 500px;
+            }
+
+            .footer-container {
+                margin-top: 200px;
+            }
+        }
