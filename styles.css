@@ -162,7 +162,7 @@ hr{
                 }
 
                 .header-text {
-                    font-size: 100pt;
+                    font-size: 130pt;
                     letter-spacing: -5pt;
                     line-height: 70%;
                 }
@@ -175,6 +175,7 @@ hr{
                     margin-top: 200px;
                     gap: 25px;
                     flex-direction: column;
+                    display: none;
                 }
 
                 .gradient{

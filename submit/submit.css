@@ -385,6 +385,8 @@ hr{
     font-weight: 400;
     color: black;
 }
+
+
   @media (min-width: 1600px) {
             .header-text {
                 font-size: 250pt;
