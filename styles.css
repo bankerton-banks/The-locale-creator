@@ -9,6 +9,50 @@
     src: url(fonts/OverusedGrotesk-VF.ttf);
 }
 
+.block{
+    display: block;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    height: 100vh;  
+    margin: 0;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color:#85FF93 ;
+    width: 500px;
+    height: 260px;
+    padding: 20px;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+p{
+    color: #213552;
+    font-family: "Overused Grotesk";
+    font-size: 2em;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .block {
+        width: 80%;
+        height: auto;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+}
+/*
+
+
 body {
   cursor: url('images/cursor1.png') default;
   background-color: rgb(255, 255, 255);
@@ -36,7 +80,7 @@ a{
     margin-right: 50px;
     margin-top: 50px;
     margin-bottom: 0px;
-    overflow: hidden; */
+    overflow: hidden; 
     position: fixed;
     top: 40%;
     left: 25px;
@@ -96,7 +140,7 @@ a{
     fill: #000000; 
 }
 
-/* .header{
+.header{
     display: flex;
     justify-content: left;
     margin-top: 200px;
@@ -110,14 +154,14 @@ a{
     letter-spacing: -12pt;
     line-height: 65%;
     font-weight: 500;
-} */
+} 
 
 span{
     margin-left: 50px;
 }
 
 .slideshow-container {
-    position: absolute; /* Keep this one absolute for layout */
+    position: absolute; 
     max-width: 600px;
     width: 600px;
     height: 600px;
@@ -269,7 +313,7 @@ hr{
                 }
             }
 
-            /* Small mobile styles */
+
             @media (max-width: 480px) {
                 .options-container {
                     margin: 20px 15px 0;
@@ -318,7 +362,6 @@ hr{
                 }
             }
 
-            /* Large desktop styles */
             @media (min-width: 1600px) {
                 .header-text {
                     font-size: 300pt;
@@ -347,3 +390,5 @@ hr{
                     margin-top: 500px;
                 }
             }
+
+        
