@@ -14,7 +14,6 @@
     justify-content: center; /* Centers horizontally */
     align-items: center;     /* Centers vertically */
     height: 100vh;  
-    margin: 0;
     border-radius: 10px;
     border-color: transparent;
     background-color:#85FF93 ;
@@ -33,11 +32,18 @@ p{
     color: #213552;
     font-family: "Overused Grotesk";
     font-size: 2em;
-    line-height: 20px;
+    line-height: 1em;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-align: center;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+
+a{
+    text-decoration: underline;
+    color: #213552;
 }
 
 @media (max-width: 600px) {
