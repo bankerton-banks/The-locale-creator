@@ -1,0 +1,89 @@
+ 
+    #splash {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      overflow: hidden;
+      user-select: none;
+    }
+ @font-face {
+    font-family: overused grotesk;
+    src: url(fonts/overused-grotesk.ttf);
+ }
+
+
+ body{
+    overflow: hidden;
+ }
+  #hint {
+  position: absolute;
+  bottom: 36px;
+  font-family: "Overused Grotesk";
+  letter-spacing: -0.2px;
+  left: 50%;
+  font-weight: 500;
+  transform: translateX(-50%);
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #213552;
+  animation: hintPulse 2.4s ease-in-out infinite;
+  transition: opacity 0.4s;
+}
+ 
+    @keyframes hintPulse {
+      0%, 100% { opacity: 0.5; }
+      80% { opacity: 1; }
+    }
+ 
+.logo2{
+    width: 220px !important;
+}
+    .logos-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: -100px;
+      gap: 0;
+    }
+ .logo {
+  width: 200px;   /* adjust to whatever size you want */
+  height: auto;   /* keeps proportions */
+  object-fit: cover;
+  animation: logoIdle 3s ease-in-out infinite;
+}
+ 
+    .logo:nth-child(3) {
+      animation-delay: 0.15s;
+    }
+ 
+    @keyframes logoIdle {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-5px); }
+    }
+ 
+    img.logo svg {
+      width: 150px;
+      height: 150px;
+    }
+ 
+    #splash:hover .logo {
+      border-color: #b0aead;
+    }
+ 
+    .logo.animating {
+      animation: none !important;
+    }
+ 
+ .divider {
+  height: 20px;  /* just empty space */
+  width: 1px;
+  background: transparent;
+}
+ 
+    
+
