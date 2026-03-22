@@ -3,6 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -11,141 +12,138 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overused+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     </head>
     <body>
 
-            <button class="hamburger" id="hamburger">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-      </button>
-      
-<a href="../index.html" class="home-button-link">
-            <img class="home-button" src="images/homebutton.svg" alt="Home">
-        </a>
-
-      <!-- Menu Overlay -->
-      <div class="menu-overlay" id="menuOverlay">
-        <button class="close-btn" id="closeBtn">&times;</button>
-        <nav class="menu-nav">
-          <a href="../index.html" class="menu-link">home</a>
-          <a href="../donate/index.html" class="menu-link">donate</a>
-          <a href="../about/about.html" class="menu-link">about</a>
-          <a href="../submit/submit.html" class="menu-link">submit</a>
-          <a href="../join/join.html " class="menu-link">join</a>
-        </nav>
-      </div>
-
-      <div class="header">
-            <div>
-                <p class="header-text">
-                ISSUE #1 <br>
-                Fall 2025   
-                </p>
-            </div>
-      </div>
-      
-      <div class="content-wrapper">
-        <div class="cover-container">
-                <img class="covers" src="images/frontcover.jpg">
-                 <img class="covers" src="images/backcover.jpg">
+      <div class="heading">
+        <div class="head">
+         ISSUES — FALL 2025
         </div>
-         <div class="page-container">
-                <img class="pages" src="images/rgb12.jpg">
-        </div>
-         <div class="page-container">
-                <img class="pages" src="images/rgb113.jpg">
-        </div>
-         <div class="page-container">
-                <img class="pages" src="images/rgb114.jpg">
-        </div>
-         <div class="page-container">
-                <img class="pages" src="images/rgb115.jpg">
-        </div>
-         <div class="page-container">
-                <img class="pages" src="images/rgb116.jpg">
-        </div>
-         <div class="page-container">
-                <img class="pages" src="images/rgb117.jpg">
-        </div>
-         <div class="page-container">
-                <img class="pages" src="images/rgb118.jpg">
-        </div>
-         <div class="page-container">
-                <img class="pages" src="images/rgb119.jpg">
-        </div>
-         <div class="page-container">
-                <img class="pages" src="images/rgb120.jpg">
-        </div>
-         <div class="page-container">
-                <img class="pages" src="images/rgb121.jpg">
-        </div>
-         <div class="page-container">
-                <img class="pages" src="images/rgb122.jpg">
-        </div>
-         <div class="page-container">
-                <img class="pages" src="images/rgb23.jpg">
-        </div>
-         <div class="page-container">
-                <img class="pages" src="images/rgb124.jpg">
-        </div>
-         <div class="page-container">
-                <img class="pages" src="images/rgb125.jpg">
-        </div>
-         <div class="page-container">
-                <img class="pages" src="images/rgb126.jpg">
-        </div>
-         <div class="page-container">
-                <img class="pages" src="images/rgb127.jpg">
+        <div class="label-group" id="label-group">
+          <div class="label" id="label"></div>
+          <img class="logo" src="images/Asset 2crgreen.svg">
         </div>
       </div>
-          <div class="footer-container">
-    <img class="footer-background" src="images/Rectangle.png" alt="">
-    <div class="socials">
-        <a href="https://www.instagram.com/thelocalecreator/" target="_blank" rel="noopener noreferrer">
-            <img class="instagram icon" src="images/instagram-icon.png" alt="Instagram">
-        </a>
-        <a href="https://www.tiktok.com/@thelocalecreator" target="_blank" rel="noopener noreferrer">
-            <img class="icon" id="tiktok" src="images/tiktok.icon.png" alt="TikTok">
-        </a>
-        <a href="mailto:thelocalecreator@gmail.com?subject=Hello">
-            <img class="email icon" src="images/email-icon.png" alt="Email">
-        </a>
-    </div>
-    <div class="copyright">
-        <p class="copyright-text">
-          © the locale creator 2036
-        </p>
-    </div>
-</div>
 
-         <script>
-  // Hamburger menu functionality
-  const hamburger = document.getElementById('hamburger');
-  const menuOverlay = document.getElementById('menuOverlay');
-  const closeBtn = document.getElementById('closeBtn');
-  const menuLinks = document.querySelectorAll('.menu-link');
+      <nav class="nav-panel" id="nav-panel">
+          <a href="../homepage.html">HOME</a>
+          <a href="../issues/index.html">ABOUT</a>
+          <a href="../donate/index.html">TEAM</a>
+          <a href="../issues/index.html">ISSUES</a>
+          <a href="../donate/index.html">DONATE</a>
+          <a href="../submit/submit.html">SUBMIT</a>
+          <a href="../join/join.html">JOIN</a>
+      </nav>
 
-  // Open menu
-  hamburger.addEventListener('click', () => {
-    menuOverlay.classList.add('active');
-    hamburger.classList.add('hidden');
-  });
+      <div class="grid" id="grid">
+        <div class="grid-item"><img src="images/page1.jpg"></div>
+        <div class="grid-item"><img src="images/page12.jpg" id="rotate"></div>
+        <div class="grid-item"><img src="images/page13.jpg" id="rotate"></div>
+        <div class="grid-item"><img src="images/page14.jpg" id="rotate"></div>
+        <div class="grid-item"><img src="images/page15.jpg" id="rotate"></div>
+        <div class="grid-item"><img src="images/page16.jpg" id="rotate"></div>
+        <div class="grid-item"><img src="images/page17.jpg" id="rotate"></div>
+        <div class="grid-item"><img src="images/page18.jpg" id="rotate"></div>
+        <div class="grid-item"><img src="images/page19.jpg" id="rotate"></div>
+        <div class="grid-item"><img src="images/page110.jpg" id="rotate"></div>
+        <div class="grid-item"><img src="images/page111.jpg" id="rotate"></div>
+        <div class="grid-item"><img src="images/page112.jpg" id="rotate"></div>
+        <div class="grid-item"><img src="images/mary.png"></div>
+        <div class="grid-item"><img src="images/page114.jpg" id="rotate"></div>
+        <div class="grid-item"><img src="images/page115.jpg" id="rotate"></div>
+        <div class="grid-item"><img src="images/page116.jpg" id="rotate"></div>
+        <div class="grid-item"><img src="images/page117.jpg" id="rotate"></div>
+        <div class="grid-item"><img src="images/page118.jpg" id="rotate"></div>
+        <div class="grid-item"><img src="images/sydney.png"></div>
+        <div class="grid-item"><img src="images/page120.jpg" id="rotate"></div>
+        <div class="grid-item"><img src="images/page121.jpg" id="rotate"></div>
+        <div class="grid-item"><img src="images/page122.jpg" id="rotate"></div>
+        <div class="grid-item"><img src="images/matro.png"></div>
+        <div class="grid-item"><img src="images/page124.jpg" id="rotate"></div>
+        <div class="grid-item"><img src="images/page125.jpg" id="rotate"></div>
+        <div class="grid-item"><img src="images/page126.jpg" id="rotate"></div>
+      </div>
 
-  // Close menu
-  closeBtn.addEventListener('click', () => {
-    menuOverlay.classList.remove('active');
-    hamburger.classList.remove('hidden');
-  });
+      <!-- LIGHTBOX -->
+      <div id="lightbox">
+        <span id="lightbox-close">&#x2715;</span>
+        <span id="lightbox-prev">&#8592;</span>
+        <img id="lightbox-img" src="" alt="">
+        <span id="lightbox-next">&#8594;</span>
+        <div id="lightbox-counter"></div>
+      </div>
 
-  // Close menu when clicking a link
-  menuLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      menuOverlay.classList.remove('active');
-      hamburger.classList.remove('hidden');
-    });
-  });
-</script>
-        <script src="" async defer></script>
+      <script>
+       /* NAV */
+const labelGroup = document.getElementById('label-group');
+const navPanel = document.getElementById('nav-panel');
+
+labelGroup.addEventListener('click', () => {
+    navPanel.classList.toggle('open');
+    labelGroup.classList.toggle('open');
+});
+
+/* LIGHTBOX */
+const items = Array.from(document.querySelectorAll('.grid-item img'));
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const counter = document.getElementById('lightbox-counter');
+let current = 0;
+
+function openLightbox(index) {
+    current = index;
+    lightboxImg.src = items[current].src;
+
+    if (items[current].id === 'rotate') {
+        lightboxImg.classList.add('rotated');
+    } else {
+        lightboxImg.classList.remove('rotated');
+    }
+
+    counter.textContent = (current + 1) + ' / ' + items.length;
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+function prev() {
+    current = (current - 1 + items.length) % items.length;
+    openLightbox(current);
+}
+
+function next() {
+    current = (current + 1) % items.length;
+    openLightbox(current);
+}
+
+/* Event listeners */
+items.forEach((img, i) => {
+    img.parentElement.addEventListener('click', () => openLightbox(i));
+});
+
+document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+document.getElementById('lightbox-prev').addEventListener('click', prev);
+document.getElementById('lightbox-next').addEventListener('click', next);
+
+lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+});
+
+document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('active')) return;
+    if (e.key === 'ArrowLeft') prev();
+    if (e.key === 'ArrowRight') next();
+    if (e.key === 'Escape') closeLightbox();
+});
+      </script>
+
     </body>
 </html>

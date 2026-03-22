@@ -22,6 +22,9 @@
     padding: 20px;
 }
 
+
+
+
 body {
     display: grid;
     place-items: center;
@@ -62,16 +65,39 @@ a{
 body {
   cursor: url('images/cursor1.png') default;
   background-color: rgb(255, 255, 255);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+#video-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+}
+
+
+
+#video-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  pointer-events: none;
 }
 
 #myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  max-width: 100%;
-  max-width: 100%;
+  width: 100%;
+   padding-top: 30px;
+   padding-bottom: 30px;
+   padding-right: 30px;
+  height: 100%;
   object-fit: cover;
-  opacity: 70%;
 }
 
 a{
@@ -88,16 +114,16 @@ a{
     margin-bottom: 0px;
     overflow: hidden; 
     position: fixed;
-    top: 40%;
+    top: 5%;
     left: 25px;
     margin-left: 20px;
     
 }
 
 .options{
-    color: #85FF93;
+    color: #213552;
     font-family: "Overused Grotesk";
-    font-size: 15px;
+    font-size: 1em;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -117,7 +143,7 @@ a{
 
 
 #description{
-    color: #85FF93;
+    color: #213552;
     font-family: "Overused Grotesk";
     font-size: .9em;
     font-style: normal;
@@ -126,24 +152,24 @@ a{
     line-height: 18px;
     width: 373px;
     position: fixed;
-    left: 239px;
-    top: 40%;
+    left: 180px;
+    top: 5%;
 }
 
 #logo{
     position: fixed;
-    width: 327px;
+    width: 500px;
     height: 233px;
     left: 40px;
-    bottom: 40px;
+    bottom: 170px;
 }
 
 #logo svg path{
-    fill: #85FF93; 
+    fill: #213552; 
 }
 
 #logo svg path:hover{
-    fill: #000000; 
+    fill: #AADDFF; 
 }
 
 .header{
@@ -195,8 +221,8 @@ span{
     height: 27px;
     align-items: center;
     position: fixed;
-    top: 40px;
-    left: 25px;
+    bottom: 35px;
+    right: 45px;
     margin-left: 20px;
     color: #85FF93;
 }
@@ -219,8 +245,8 @@ span{
 
 .copyright{
     position: fixed;
-    right: 25px;
-    bottom: 20px;
+    right: 635px;
+    bottom: 40px;
 }
 
 .copyright-text{
@@ -317,6 +343,9 @@ hr{
                     font-size: 14px;
                     text-align: center;
                 }
+
+                  #video-container {
+    display: none;
             }
 
 

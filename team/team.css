@@ -116,7 +116,7 @@ img.logo {
 
 .nav-panel a {
     font-family: "Overused Grotesk";
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: 400;
     letter-spacing: -0.5px;
     color: #213552;
@@ -216,4 +216,169 @@ img.illu {
     color: #213552;
     margin-top: 20px ;
 
+}
+
+@media (max-width: 768px) {
+
+    /* BUBBLE */
+    .bubble {
+        width: 300px;
+        height: 300px;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        top: 50%;
+        display: none;
+    }
+
+    /* HEADER */
+    .heading {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+
+    .head {
+        font-size: 0em;
+        letter-spacing: -4px;
+        margin-left: 25px;
+    }
+
+    .label-group {
+        padding-right: 25px;
+        padding-left: 25px;
+        margin-top: 10px;
+    }
+
+    .label {
+        font-size: 1.4em;
+        letter-spacing: -1px;
+        padding-top: 15px;
+    }
+
+    img.logo {
+        width: 80px !important;
+        height: 80px !important;
+        padding-right: 0;
+        padding-top: 15px;
+    }
+
+    .nav-panel {
+        right: 25px;
+        top: 40px;
+    }
+
+    .nav-panel a {
+        font-size: 1.1em;
+    }
+
+    /* PAGE LAYOUT */
+    .page-content {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    /* PROFILES */
+    .individual {
+        flex-direction: column;
+        margin: 30px 0;
+        padding: 0 20px;
+    }
+
+    img {
+        width: 100%;
+        height: 280px;
+        padding-left: 0;
+    }
+
+    .name {
+        font-size: 3em;
+        letter-spacing: -2px;
+        line-height: 50px;
+    }
+
+    .title {
+        font-size: 1.1em;
+        margin-top: 10px;
+    }
+
+    /* ILLUSTRATIONS */
+    .illustrations-column {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    img.illu {
+        width: 45%;
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .head {
+        font-size: 1.2em;
+        letter-spacing: -0.5px;
+        margin-left: 15px;
+        margin-top: -5px;
+    }
+
+    .label {
+        font-size: 1.1em;
+    }
+
+    br{
+        display: none;
+    }
+
+    img.logo {
+        width: 50px !important;
+        height: 50px !important;
+        position: absolute;
+        right: 20px;
+        top: 8px;
+    }
+
+    .page-content {
+        margin-top: 0px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        width: 90vw;
+        height: auto;
+
+    }
+
+    .name {
+        font-size: 2.2em;
+        letter-spacing: -1.5px;
+        line-height: 40px;
+    }
+
+    .title {
+        font-size: 1em;
+    }
+
+    img.illu {
+        width: 100%;
+        height: 220px;
+        display: none;
+    }
+
+    .nav-panel {
+        padding-right: 0px;
+        top: 30px;
+        font-size: 0.8em;
+    }
+
+    .individual {
+        margin: 20px 0;
+        padding: 0 15px;
+    }
 }
