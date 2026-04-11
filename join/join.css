@@ -183,3 +183,8 @@ li {
 .icon:hover {
   transform: rotate(180deg);
 }
+
+
+.hoverlink:hover {
+  color: #85FF93;
+}

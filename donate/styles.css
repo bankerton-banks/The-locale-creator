@@ -183,10 +183,10 @@ img {
 }
 
 .vertical {
-  width: 80px;
+  width: 90px;
   height: auto;
   position: absolute;
-  left: 1350px;
+  left: 1340px;
   top: 30px;
 }
 
@@ -203,4 +203,13 @@ h3 {
     position: absolute;
     left: 1325px;
     top: 150px;
+}
+
+.icon {
+  transition: transform 0.5s ease-in-out;
+}
+
+
+.icon:hover {
+  transform: rotate(180deg);
 }
