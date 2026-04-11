@@ -54,7 +54,7 @@ h1 {
 }
 
 .options2{
-    color: #AADDFF;
+    color: #85FF93;
     font-family: "Overused Grotesk";
     font-size: 15px;
     font-style: normal;
@@ -103,24 +103,42 @@ h1 {
 }
 
 h2 {
+   font-family: "Overused Grotesk";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+    position: relative;
+    left: 750px;
+    top: 120px;
+    z-index: 2;
+    color: #000000;
+
+}
+
+.texttwo {
     font-family: "Overused Grotesk";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 19px;
+    line-height: 20px;
     letter-spacing: -0.5px;
     position: relative;
-    left: 400px;
-    top: 120px;
-    z-index: 1;
+    left: 750px;
+    top: 140px;
+    z-index: 2;
+    color: #000000;
+
 }
 
 
+
 .vertical {
-  width: 80px;
+  width: 90px;
   height: auto;
   position: absolute;
-  left: 1350px;
+  left: 1340px;
   top: 30px;
 }
 
@@ -131,7 +149,7 @@ h3 {
     font-size: 80px;
     line-height: 130px;
     letter-spacing: -4px;
-    color: #AADDFF;
+    color: #85FF93;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     position: absolute;
@@ -141,5 +159,27 @@ h3 {
 
 .backgroundimg {
     width: 500px;
-    z-index: 2;
+    z-index: 1;
+    position: absolute;
+    left: 200px;
+    top: 120px;
+}
+
+ul { list-style-image: url("hoverhomebutton.svg");  
+    
+}
+
+
+li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.icon {
+  transition: transform 0.5s ease-in-out;
+}
+
+
+.icon:hover {
+  transform: rotate(180deg);
 }
