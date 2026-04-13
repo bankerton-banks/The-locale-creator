@@ -18,7 +18,7 @@ h1 {
     font-size: 180px;
     line-height: 130px;
     letter-spacing: -4px;
-    color: #FFA8BA;
+    color: #213552;
     position: relative;
     top: 40px;
     left: 200px;
@@ -44,7 +44,7 @@ h1 {
 }
 
 .options{
-    color: #FFA8BA;
+   color: #213552;
     font-family: "Overused Grotesk";
     font-size: 15px;
     font-style: normal;
@@ -54,7 +54,7 @@ h1 {
 }
 
 .options2{
-    color: #AADDFF;
+    color: #213552;
     font-family: "Overused Grotesk";
     font-size: 15px;
     font-style: normal;
@@ -64,7 +64,7 @@ h1 {
 }
 
 .options :hover{
-    color: #000000;
+    color: #85FF93;
     font-family: "Overused Grotesk";
     font-size: 15px;
     font-style: normal;
@@ -75,7 +75,7 @@ h1 {
 }
 
 .options2 :hover{
-    color: #000000;
+    color: #85FF93;
     font-family: "Overused Grotesk";
     font-size: 15px;
     font-style: normal;
@@ -197,7 +197,7 @@ h3 {
     font-size: 80px;
     line-height: 130px;
     letter-spacing: -4px;
-    color: #AADDFF;
+    color: #213552;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     position: absolute;
@@ -212,4 +212,13 @@ h3 {
 
 .icon:hover {
   transform: rotate(180deg);
+}
+
+a {
+    text-decoration: none;
+    color: #213552;
+}
+
+.hyperlink:hover {
+  color: #85FF93;
 }

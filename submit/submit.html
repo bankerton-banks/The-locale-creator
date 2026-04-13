@@ -10,112 +10,61 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="submit.css?v=2">
+        <link rel="stylesheet" href="submit.css">
     </head>
-<body>
-
-        <button class="hamburger" id="hamburger">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-        </button>
-
-        <a href="../index.html" class="home-button-link">
-            <img class="home-button" src="images/homebutton.svg" alt="Home">
-        </a>
-
-        <!-- Menu Overlay -->
-        <div class="menu-overlay" id="menuOverlay">
-            <button class="close-btn" id="closeBtn">&times;</button>
-            <nav class="menu-nav">
-                <a href="../index.html" class="menu-link">home</a>
-                <a href="../donate/index.html" class="menu-link">donate</a>
-                <a href="../about/about.html" class="menu-link">about</a>
-                <a href="../join/join.html" class="menu-link">join</a>
-            </nav>
-        </div>
-
-         <div class="header-container">
-            <p class="header-text">SUBMIT</p>
-</div>
-
-<div class="info-container">
-    <div class="info">
-        <p class="subtext">What we look for:</p>
-        <p class="bodytext">We are always accepting and looking for 
-            new student creations, no matter the medium. As a magazine 
-            committed to highlighting you, we are very flexible. If your 
-            creations or works require a certain formatting, we can figure 
-            it out! Our second issue will be themed. We will release the 
-            theme shortly.</p>
-    </div>
-    
-    <div class="info"> 
-        <p class="subtext">How to send your work:</p>
-        <p class="bodytext">Please fill out our google form with all of your information and any additional materials. We will respond to you shortly.</p>
-    </div>
-</div>
-
-
- <div class="slideshow-container">
-                <div class="slide fade">
-                 <a href="https://forms.gle/pfzaDNGvyPomi6xj8">  <img class="image" src="images/SUBMITT.svg" alt="Slide 1"> </a>  
-                </div>
-        </div>
-
-
-             <div class="footer-container">
-    <img class="footer-background" src="images/Rectangle.png" alt="">
-    <div class="socials">
-        <a href="https://www.instagram.com/thelocalecreator/" target="_blank" rel="noopener noreferrer">
-            <img class="instagram icon" src="images/instagram-icon copy.png" alt="Instagram">
-        </a>
-        <a href="https://www.tiktok.com/@thelocalecreator" target="_blank" rel="noopener noreferrer">
-            <img class="icon" id="tiktok" src="images/tiktok.icon.png" alt="TikTok">
-        </a>
-        <a href="mailto:thelocalecreator@gmail.com?subject=Hello">
-            <img class="email icon" src="images/email-icon.png" alt="Email">
-        </a>
-    </div>
-    <div class="copyright">
-        <p class="copyright-text">
-          © the locale creator 2036
-        </p>
-    </div>
-</div>
-
-
-        <script>
-            // Hamburger menu functionality
-            const hamburger = document.getElementById('hamburger');
-            const menuOverlay = document.getElementById('menuOverlay');
-            const closeBtn = document.getElementById('closeBtn');
-            const menuLinks = document.querySelectorAll('.menu-link');
-            const homeButton = document.querySelector('.home-button-link');
-
-            // Open menu
-            hamburger.addEventListener('click', () => {
-                menuOverlay.classList.add('active');
-                hamburger.classList.add('hidden');
-                homeButton.classList.add('hidden');
-            });
-
-            // Close menu
-            closeBtn.addEventListener('click', () => {
-                menuOverlay.classList.remove('active');
-                hamburger.classList.remove('hidden');
-                homeButton.classList.remove('hidden');
-            });
-
-            // Close menu when clicking a link
-            menuLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    menuOverlay.classList.remove('active');
-                    hamburger.classList.remove('hidden');
-                    homeButton.classList.remove('hidden');
-                });
-            });
-        </script>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
         <script src="" async defer></script>
+
+
+    <div class="options-container">
+            <div class="options2">
+                <a href="about/about.html" class="options2">ABOUT</a>
+            </div>
+            <div class="options2">
+                <a href="issues/index.html" class="options2">ISSUES</a>
+            </div>
+            <div>
+            <a href="submit/submit.html" class="options2">SUBMIT</a>
+            </div>
+            <div class="options2">
+            <a href="join/join.html" class="options2">JOIN</a>
+            </div>
+            <div class="options2">
+            <a href="donate/index.html" class="options2">DONATE</a>
+            </div>
+        </div>
+
+<a href="/homepage.html">
+<img class="vertical icon" src="images/greenflower.png">
+</a>
+<h3>SUBMIT</h3>
+
+
+
+<h2>CELEBRATE YOUR WORK BY SUBMITTING!
+<br>
+<br>
+We are always accepting and looking for new student creations, no matter the medium. <br> 
+As a magazine committed to highlighting you, we are very flexible. <br>
+If your creations or works require a certain formatting, we can figure it out! 
+<br> Our second issue will be themed. We will release the theme shortly.
+</h2>
+
+<a class="hyperlink" href="https://docs.google.com/forms/d/e/1FAIpQLSfwn5WtUDl8ysjXHE7NiY9Soaqj-IXXFR1JJeoULUAaVpfM3w/viewform">
+<h2>
+    <br>
+    <br>
+    SUBMIT HERE!
+</h2>
+</a>
+        <img class="item1 appear" src="images/linoprint.jpeg">
+        <img class="item2 appear" src="1.jpg">
+          <img class="item3 appear" src="images/tothemoonye-5.jpg">
+         
+
     </body>
 </html>
