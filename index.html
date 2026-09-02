@@ -10,92 +10,14 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="entry.css">
+        <link rel="stylesheet" href="">
     </head>
-  <body style="background-color: #aaddff;">
- 
-<div id="splash" onclick="startAnimation()">
-  <div class="logos-wrap" id="logosWrap">
-
-  <img src="Asset 2crgreen.svg" class="logo" id="logo1" />
-
-  <div class="divider"></div>
-
-  <img src="Asset 4crgreen.svg" class="logo logo2" id="logo2" />
-
-</div>
- 
-  </div>
- 
-  <div id="hint">click to enter</div>
-  <div id="overlay"></div>
- 
-  <!-- HOME PAGE CONTENT — edit this section -->
- <script>
-  let animated = false;
-
-  function startAnimation() {
-    if (animated) return;
-    animated = true;
-
-    const logo1 = document.getElementById('logo1');
-    const logo2 = document.getElementById('logo2');
-    const hint = document.getElementById('hint');
-
-    hint.style.opacity = '0';
-    logo1.classList.add('animating');
-    logo2.classList.add('animating');
-
-    const dur = 900;
-    const start = performance.now();
-
-    function easeInOut(t) {
-      return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
-    }
-
-    function lerp(a, b, t) { return a + (b - a) * t; }
-
-    /* --- Phase 1: logos spin and fly off screen vertically --- */
-    function tickLogos(now) {
-      const raw = Math.min((now - start) / dur, 1);
-      const t = easeInOut(raw);
-
-      const rotation = lerp(0, 180, t);
-      const ty1 = lerp(0, -window.innerHeight, t);
-      const ty2 = lerp(0, window.innerHeight, t);
-
-      logo1.style.transform = `translateY(${ty1}px) rotate(${rotation}deg)`;
-      logo2.style.transform = `translateY(${ty2}px) rotate(${-rotation}deg)`;
-
-      if (raw < 1) {
-        requestAnimationFrame(tickLogos);
-      } else {
-        fadeToWhite();
-      }
-    }
-
-    requestAnimationFrame(tickLogos);
-  }
-
-  /* --- Phase 2: white flash then redirect --- */
-  function fadeToWhite() {
-    const overlay = document.getElementById('overlay');
-    const start = performance.now();
-    const dur = 500;
-
-    function tick(now) {
-      const t = Math.min((now - start) / dur, 1);
-      overlay.style.opacity = t;
-      if (t < 1) {
-        requestAnimationFrame(tick);
-      } else {
-        window.location.href = '../homepage.html';
-      }
-    }
-
-    requestAnimationFrame(tick);
-  }
-</script>
-</body>
-
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <p> hello this is finley test</p>
+        <script src="" async defer></script>
+    </body>
 </html>
